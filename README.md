@@ -15,7 +15,7 @@ serverless deploy
 
 ## Test api's
 
-replace '<uniqueid>' with the id generated after deployment and '<id>' with proper existing user id 
+replace 'uniqueid' with the id generated after deployment and 'id' with proper existing user id 
 
 Create User
 ```bash
