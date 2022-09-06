@@ -1,17 +1,21 @@
-## Setup & Deploy
+## Prerequisites
+aws-cli v2 to be installed and confire aws creds with right permissions.
 node version 16 to install serverless package.
 ## Setup & Deploy
 
 ```bash
 npm install -g serverless
 ```
-In order to deploy the endpoint simply run
+
+## To deploy
 
 ```bash
 serverless deploy
 ```
 
-#Test api's
+## Test api's
+
+replace <uniqueid> with the id generated after deployment and <id> with proper existing user id 
 
 Create User
 ```bash
@@ -35,4 +39,4 @@ curl -X PUT https://<uniqueid>.execute-api.us-east-1.amazonaws.com/user/<id> --d
 delete user
 ```bash
 curl -X DELETE https://<uniqueid>.execute-api.us-east-1.amazonaws.com/user/<id>
-```# python-lambda-dynamo-boilerplate
+```
